@@ -4,6 +4,7 @@
 
 #include "JavaCodeGeneratorFactory.h"
 #include "CppCodeGeneratorFactory.h"
+#include "PhpCodeGeneratorFactory.h"
 #include "CodeWriter.h"
 
 
@@ -17,6 +18,7 @@ void CodeWriterCore::prepareCodeWriterFactories()
 {
     _cgf_umap.emplace("Java", std::make_shared<JavaCodeGeneratorFactory>());
     _cgf_umap.emplace("Cpp", std::make_shared<CppCodeGeneratorFactory>());
+    _cgf_umap.emplace("Php", std::make_shared<PhpCodeGeneratorFactory>());
 }
 
 

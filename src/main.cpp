@@ -7,6 +7,7 @@ int main()
     codeWriterCore.prepareCodeWriterFactories();
     codeWriterCore.createCodeWriter("Java");
     codeWriterCore.createCodeWriter("Cpp");
+    codeWriterCore.createCodeWriter("Php");
 }
 
 
